@@ -10,9 +10,9 @@ int main()
    printf("End time:");
    scanf("%d %d",&hour2,&minute2);
    int total_time1 = (hour2-hour1)*60+(minute2-minute1);
-   double total_time2 = total_time1/60.0;
-   printf("You worked: %.2fhours",total_time2);
-
+   int work_hour = total_time1/60;
+   int work_minute  = total_time1%60;
+   printf("停留时间:%d小时%d分钟\n",work_hour,work_minute);
 
 
    
